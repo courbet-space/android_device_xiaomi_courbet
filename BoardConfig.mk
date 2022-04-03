@@ -11,6 +11,10 @@ BUILD_BROKEN_VENDOR_PROPERTY_NAMESPACE := true
 include device/xiaomi/sm6150-common/BoardConfigCommon.mk
 
 DEVICE_PATH := device/xiaomi/courbet
+
+# Inherit from proprietary files for miuicamera
+-include vendor/xiaomi/sweet-miuicamera/products/board.mk
+
 BUILD_BROKEN_DUP_RULES := true
 
 # Assert
