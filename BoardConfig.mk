@@ -19,6 +19,10 @@ TARGET_OTA_ASSERT_DEVICE := courbet,courbetin
 # Audio
 TARGET_PROVIDES_AUDIO_EXTNS := true
 
+# Init
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_courbet
+TARGET_RECOVERY_DEVICE_MODULES := libinit_courbet
+
 # HIDL
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/hidl/manifest.xml
 ODM_MANIFEST_SKUS += courbet
