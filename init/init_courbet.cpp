@@ -83,13 +83,13 @@ void vendor_load_properties()
     string region = GetProperty("ro.boot.hwc", "");
 
     if (region == "IN") { // India
-        set_device_props("M2101K9AI", "courbetin", "Mi 11 Lite", "courbet_in_global");
-        property_override("bluetooth.device.default_name", "Mi 11 Lite");
-        property_override("vendor.usb.product_string", "Mi 11 Lite");
+        set_device_props("M2101K9AI", "courbetin", "Mi 11 Lite 4G", "courbet_in_global");
+        property_override("bluetooth.device.default_name", "Mi 11 Lite 4G");
+        property_override("vendor.usb.product_string", "Mi 11 Lite 4G");
     } else { // Global
-        set_device_props("M2101K9AG", "courbet", "Mi 11 Lite", "courbet_global");
-        property_override("bluetooth.device.default_name", "Mi 11 Lite");
-        property_override("vendor.usb.product_string", "Mi 11 Lite");
+        set_device_props("M2101K9AG", "courbet", "Mi 11 Lite 4G", "courbet_global");
+        property_override("bluetooth.device.default_name", "Mi 11 Lite 4G");
+        property_override("vendor.usb.product_string", "Mi 11 Lite 4G");
     }
 
     // Set hardware revision
