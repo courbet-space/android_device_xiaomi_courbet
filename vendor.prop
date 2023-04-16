@@ -18,3 +18,11 @@ ro.vendor.display.ad=1
 vendor.display.disable_idle_time_hdr=1
 vendor.display.disable_idle_time_video=1
 vendor.display.idle_time=1100
+
+#property for touchfeature type
+#bit[0] represents doubleclick enable by touchfeature
+#bit[1] represents panel direction in non-game mode
+#bit[2] represents dynamic edge grip by 12 rect
+#bit[3] represents set touch driver debug level by System
+#bit[4] for singletap in aod mode
+ro.vendor.touchfeature.type=19
